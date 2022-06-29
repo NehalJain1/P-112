@@ -1,0 +1,41 @@
+body
+{
+  color: white;
+  background: #29adff;
+}
+span
+{
+  font-size: 30px;
+  margin: 5px;
+}
+#webcam , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+#hand_gesture
+{
+  font-size:48px;
+}
+.heading {
+  background-color: #ff4b1f;
+  width: 350px;
+  height: 90px;
+  font-size: x-large;
+}
+#Pridiction {
+  font-size:25px;
+  margin-top: 10px;
+}
+.btn {
+    background-color: #ff4b1f;
+}

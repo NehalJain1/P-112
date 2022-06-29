@@ -1,0 +1,77 @@
+ 
+<html>
+    <head>
+      <title>Hand Signs!</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+      <h1 class="heading">
+    HAND GESTURES
+        <br>
+        <br>
+      <span>  &#9757;</span> 
+      <span>  &#9994; </span> 
+      <span>  &#128071;</span>
+      <span> &#128075;</span>
+      <span> &#129304;</span>
+      <span> &#9995;</span>
+  
+      </h1>
+        <br><br>
+  
+        <p style="font-size: 20px;">Take a selfie of a gesture to know about its meaning
+            <br>
+            <br>
+            The model is trained for the following gestures
+            <br>
+            <br>
+            <span>&#128076;</span>
+            <span>&#128077;</span>
+            <span>&#9996;</span>
+            <span>&#128079;</span>
+            <span>&#128075;</span>
+            <span>&#128078;</span>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam view - </label>
+         <div id="webcam"></div>
+          <br><br>
+        <button id="btn1" onclick="TakeSnapshot()" class="btn">Take Snapshot</button>
+        </div>
+  
+          <div class="col-md-4 col-sm-12 col-xs-12">
+        <p id="Pridiction">Prediction -</p>
+        <div id="hand_gesture"> </div>
+        <div id="gesture_name"></div>
+        <div id="gesture_accuracy"></div>
+  </div>
+  
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+         <div id="result"></div>
+          <br><br>
+        <button id="btn2" onclick="PredictEmotion()" class="btn">Predict Emotion</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="script.js"></script>
+  
+    </body>
+  </html>
